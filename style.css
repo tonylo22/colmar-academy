@@ -1,0 +1,211 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*General setting/unsetting styles*/
+body, h1, h3, [class*="col-"], [class*="card-"] {
+	margin: 0;
+	padding: 0;
+}
+
+.row {
+	margin-left: 0!important;
+	margin-right: 0!important;
+	border: 0.5px;
+}
+
+button {
+	border-radius: 0!important;
+}
+
+/*Styles for specific elements*/
+nav {
+	height: 64px;
+}
+
+.bg-lightgrey {
+	background-color: lightgrey;
+}
+
+.brand img {
+	height: 48px;
+} 
+
+.brand span {
+	font-size: 32px;
+}
+
+@media only screen and (max-width: 749px) {
+	/*prevent overflow in navbar*/
+	.brand span {
+		font-size: 16px;
+	}
+
+	.brand img {
+		height: 24px;
+	}
+}
+
+.w-card {
+	max-width: calc((100% - 64px) / 3);
+}
+
+/*Custom spacing classes following Bootstrap conventions*/
+.my-32 {
+	margin-top: 32px;
+	margin-bottom: 32px;
+}
+
+.mx-32 {
+	margin-left: 32px;
+	margin-right: 32px;
+}
+
+.mt-32 {
+	margin-top: 32px;
+}
+
+.mb-32 {
+	margin-bottom: 32px;
+}
+
+.mt-24 {
+	margin-top: 24px;
+}
+
+.mb-24 {
+	margin-bottom: 24px;
+}
+
+.ml-16 {
+	margin-left: 16px;
+}
+
+.my-16 {
+	margin-top: 16px;
+	margin-bottom: 16px;
+}
+
+.my-8 {
+	margin-top: 8px;
+	margin-bottom: 8px;
+}
+
+.mb-8 {
+	margin-bottom: 8px;
+}
+
+.px-72 {
+	padding-left: 72px;
+	padding-right: 72px;
+}
+
+.py-32 {
+	padding-top: 32px;
+	padding-bottom: 32px;
+}
+
+.pb-32 {
+	padding-bottom: 32px;
+}
+
+.px-24 {
+	padding-left: 24px;
+	padding-right: 24px;
+}
+
+.pb-24 {
+	padding-bottom: 24px;
+}
+
+.px-16 {
+	padding-left: 16px;
+	padding-right: 16px;
+}
+
+.py-16 {
+	padding-top: 16px;
+	padding-bottom: 16px;
+}
+
+/*Modified spacing for mobile version*/
+@media only screen and (max-width: 576px) {
+	.banner-img-container {
+		padding: 0;
+	}
+
+	.banner-text {
+		padding: 32px 16px;
+	}
+
+	.banner-text h3 {
+		margin-top: 32px;
+		margin-bottom: 24px;
+	}
+
+	.info-cards {
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+
+	.info-cards .card {
+		border: 0;
+		margin-bottom: 32px;
+	}
+
+	.info-cards .col-sm-8 {
+		padding: 16px;
+	}
+
+	.info-cards .card-body {
+		padding-left: 16px;
+		padding-right: 16px;
+	}
+
+	.info-cards #last-info-card {
+		border: 0;
+		margin-bottom: 16px;
+	}
+
+	.thesis {
+		border-top: 1px solid lightgrey;
+	}
+
+	.thesis h1 {
+		margin-bottom: 16px;
+	}
+
+	.video-card {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.video-card .card {
+		padding-bottom: 24px;
+	}
+
+	.course-section, .course-section-mobile {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.course-section-mobile {
+		border-top: 1px solid lightgrey;
+	}
+
+	.course-section-mobile h1 {
+		margin-top: 32px;
+		margin-bottom: 16px;
+	}
+
+	.w-card {
+		max-width: 100%;
+		margin: 0 0 8px 0;
+	}
+
+	.accordion .btn {
+		padding: 16px 16px 24px;
+		background-color: lightgrey;
+		font-size: 20px;
+		font-weight: 500;
+	}
+}
