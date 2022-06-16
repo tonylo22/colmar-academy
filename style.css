@@ -10,7 +10,6 @@ body, h1, h3, [class*="col-"], [class*="card-"] {
 .row {
 	margin-left: 0!important;
 	margin-right: 0!important;
-	border: 0.5px;
 }
 
 button {
@@ -26,16 +25,20 @@ nav {
 	background-color: lightgrey;
 }
 
+.logo-text {
+	height: 32px;
+}
+
 .brand img {
-	height: 48px;
+	height: 32px;
 } 
 
 .brand span {
-	font-size: 32px;
+	font-size: 20px;
 }
 
-@media only screen and (max-width: 749px) {
-	/*prevent overflow in navbar*/
+/*prevent overflow/wrap in navbar*/
+/*@media only screen and (max-width: 749px) {
 	.brand span {
 		font-size: 16px;
 	}
@@ -43,7 +46,7 @@ nav {
 	.brand img {
 		height: 24px;
 	}
-}
+}*/
 
 .w-card {
 	max-width: calc((100% - 64px) / 3);
